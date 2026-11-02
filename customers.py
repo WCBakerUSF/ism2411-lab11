@@ -11,6 +11,8 @@ print(customer)
 
 
 print("---Exercise 2---")
+customer['phone'] = '555-5555'
+print(customer)
 
 
 
@@ -55,8 +57,26 @@ customers = [
     {"name": "David", "tier": "bronze", "ytd_spend": 450}
 ]
 
+for record in customers:
+    rate = tier_discounts.get(record["tier"], 0)
+    discount
+
+
 print("---Exercise 7---")
 catalog = {
     "Widget A": {"price": 9.99, "stock": 150},
     "Gadget C": {"price": 49.99, "stock": 8},
 }
+
+for product_name, product_details in catalog.items():
+    if details["stock"] < 20:
+        print(f"LOW STOCK: {product_name} - only {product_details['stock']} left")
+
+
+print()
+
+transactions = [
+    {"region": "South", "amount": 300},
+    {"region": "North", "amount": 150},
+    
+]
