@@ -59,7 +59,8 @@ customers = [
 
 for record in customers:
     rate = tier_discounts.get(record["tier"], 0)
-    discount
+    discount = 300 * rate
+    print(f"{record['name']} ({record['tier']}: ${discount:.2f} off a $300 purchase)")
 
 
 print("---Exercise 7---")
@@ -78,5 +79,5 @@ print()
 transactions = [
     {"region": "South", "amount": 300},
     {"region": "North", "amount": 150},
-    
+
 ]
