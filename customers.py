@@ -12,7 +12,7 @@ print(customer)
 
 print("---Exercise 2---")
 
-customer.update("phone": "iphone")
+
 
 
 
@@ -26,12 +26,14 @@ try:
 except KeyError as error:
     print("KeyError caught: ", error)
 
+print("---Exercise 4---")
 for key, value
 
 for key in customer:
     print(key, customer[key])
 
-print()
+print("---Exercise 5---")
+
 tier_discounts = {"bronze": 0,
                   "silver": 0.05,
                   "gold": 0.1,
@@ -44,3 +46,17 @@ final_price = purchase * (1 - discount_rate)
 print(f"Tier: {customer['tier']}")
 print(f"Discount Rate: {discount_rate * 100}%")
 print(f"Final Price: ${final_price}")
+
+print("---Exercise 6---")
+
+customers = [
+    {"name": "Bob", "tier": "silver", "ytd_spend": 3200},
+    {"name": "Carol", "tier": "gold", "ytd_spend": 8750},
+    {"name": "David", "tier": "bronze", "ytd_spend": 450}
+]
+
+print("---Exercise 7---")
+catalog = {
+    "Widget A": {"price": 9.99, "stock": 150},
+    "Gadget C": {"price": 49.99, "stock": 8},
+}
