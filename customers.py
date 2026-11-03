@@ -1,3 +1,7 @@
+
+
+
+
 print("---Exercise 1---")
 
 customer = {
@@ -7,14 +11,21 @@ customer = {
 "ytd_spend": 12400
 }
 
-print(customer)
+print(customer["name"])
+print(customer["email"])
+print(customer["tier"])
+print(customer["ytd_spend"])
 
 
 print("---Exercise 2---")
+
 customer['phone'] = '555-5555'
 print(customer)
+customer['tier'] = 'platinum'
+del customer['Name']
+print(customer)
 
-
+print(customer.get('ytd_spend', 0))
 
 
 
@@ -29,7 +40,10 @@ except KeyError as error:
     print("KeyError caught: ", error)
 
 print("---Exercise 4---")
-for key, value
+for key, value in customer:
+    print(key, customer[key])
+    print(value, customer[value])
+
 
 for key in customer:
     print(key, customer[key])
@@ -70,14 +84,23 @@ catalog = {
 }
 
 for product_name, product_details in catalog.items():
-    if details["stock"] < 20:
+    if product_details["stock"] < 20:
         print(f"LOW STOCK: {product_name} - only {product_details['stock']} left")
 
 
-print()
+print("---Exercise 8---")
 
 transactions = [
     {"region": "South", "amount": 300},
     {"region": "North", "amount": 150},
+    {"region": "South", "amount": 200},
 
 ]
+
+sales_by_region = {}
+for sale in transactions:
+    region = sale["region"]
+    amount = sale["amount"]
+    sales_by_region[region] = sales_by_region.get(region, 0) + amount
+
+print(sales_by_region)
