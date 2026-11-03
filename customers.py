@@ -1,4 +1,8 @@
-
+#Relfection Questions
+# 1. Bracket notation lets me modify data and use dynamic keys, which can be useful when somehting regarding pricing needs to be changed.
+# .get() Allows me to get key access from a dictionary and prevent a keyerror if it isn't there.
+# 2. The summary dictionary shares aspects of excel in its use of key-value pairs similar to the PivotTable function.
+# I find Python has much more scalability and reproducibility for larger datasets, more so than Excel.
 
 
 
